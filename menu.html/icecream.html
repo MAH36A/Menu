@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    .menu-item {
+        transition: all 0.3s ease;
+    }
+
+    .menu-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .ingredients {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .ingredients.active {
+        max-height: 500px;
+    }
+</style>
+
+<!-- Our content will go here -->
+
+<body class="bg-amber-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-amber-50 shadow-lg">
+        <div class="max-w-8*1 mx-auto px-8">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <a href="ahome.html" class="text-xl font-serif text-amber-800">MAH</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <a href="ahome.html" class="py-4 px-2 text-gray-500 font-bold hover:text-amber-600">Home</a>
+                    <a href="favoritefood.html" class="py-4 px-2 text-gray-500 font-bold hover:text-amber-600">My
+                        Favorite Food</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 font-bold hover:text-amber-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-4">
+            <h1 class="text-5xl font-bold text-amber-800 py-4">Ice Cream</h1>
+            <p class="text-xl text-amber-600">Handcrafted Daily</p>
+            <div class="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+        </header>
+
+        <!-- Menu Items -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Vanilla Bean -->
+            <div class="menu-item bg-white rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-xl font-semibold mb-4 text-amber-800">Vanilla Bean</h2>
+                    <span class="text-xl font-bold text-amber-800">3.500 IQD</span>
+                </div>
+                <img src="/images/photo28.jpg" alt="Vanilla Bean Ice Cream"
+                    class="w-full h-48 object-cover mb-4 rounded">
+                <p class="text-gray-700 mb-4">Classic vanilla with real vanilla bean specks throughout.</p>
+                <button class="text-blue-500 px-6 py-3 rounded-lg font-bold hover:bg-amber-300">
+                    Order
+                </button>
+            </div>
+
+            <!-- Chocolate Fudge -->
+            <div class="menu-item bg-white rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-xl font-semibold mb-4 text-amber-800">Chocolate Fudge</h2>
+                    <span class="text-xl font-bold text-amber-800">4.000 IQD</span>
+                </div>
+                <img src="/images/photo23.jpg" alt="Chocolate Fudge Ice Cream"
+                    class="w-full h-48 object-cover mb-4 rounded">
+                <p class="text-gray-700 mb-4">Rich chocolate ice cream with ribbons of fudge swirl.</p>
+                <button class="text-blue-500 px-6 py-3 rounded-lg font-bold hover:bg-amber-300">
+                    Order
+                </button>
+            </div>
+
+            <!-- Strawberry Swirl -->
+            <div class="menu-item bg-white rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-xl font-semibold mb-4 text-amber-800">Strawberry Swirl</h2>
+                    <span class="text-xl font-bold text-amber-800">3.800 IQD</span>
+                </div>
+                <img src="/images/photo24.jpg" alt="Strawberry Swirl Ice Cream"
+                    class="w-full h-48 object-cover mb-4 rounded">
+                <p class="text-gray-700 mb-4">Creamy strawberry ice cream with real fruit swirls.</p>
+                <button class="text-blue-500 px-6 py-3 rounded-lg font-bold hover:bg-amber-300">
+                    Order
+                </button>
+            </div>
+
+            <!-- Mint Chocolate Chip -->
+            <div class="menu-item bg-white rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-xl font-semibold mb-4 text-amber-800">Mint Chocolate Chip</h2>
+                    <span class="text-xl font-bold text-amber-800">4.200 IQD</span>
+                </div>
+                <img src="/images/photo25.jpg" alt="Mint Chocolate Chip Ice Cream"
+                    class="w-full h-48 object-cover mb-4 rounded">
+                <p class="text-gray-700 mb-4">Refreshing mint ice cream with dark chocolate chunks.</p>
+                <button class="text-blue-500 px-6 py-3 rounded-lg font-bold hover:bg-amber-300">
+                    Order
+                </button>
+            </div>
+
+            <!-- Cookies & Cream -->
+            <div class="menu-item bg-white rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-xl font-semibold mb-4 text-amber-800">Cookies & Cream</h2>
+                    <span class="text-xl font-bold text-amber-800">4.500 IQD</span>
+                </div>
+                <img src="/images/photo26.jpeg" alt="Cookies & Cream Ice Cream"
+                    class="w-full h-48 object-cover mb-4 rounded">
+                <p class="text-gray-700 mb-4">Vanilla ice cream loaded with chocolate cookie pieces.</p>
+                <button class="text-blue-500 px-6 py-3 rounded-lg font-bold hover:bg-amber-300">
+                    Order
+                </button>
+            </div>
+
+            <!-- Rocky Road -->
+            <div class="menu-item bg-white rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-xl font-semibold mb-4 text-amber-800">Rocky Road</h2>
+                    <span class="text-xl font-bold text-amber-800">4.800 IQD</span>
+                </div>
+                <img src="/images/photo27.jpg" alt="Rocky Road Ice Cream" class="w-full h-48 object-cover mb-4 rounded">
+                <p class="text-gray-700 mb-4">Chocolate ice cream with marshmallows, nuts, and chocolate chunks.</p>
+                <button class="text-blue-500 px-6 py-3 rounded-lg font-bold hover:bg-amber-300">
+                    Order
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Main sections -->
+        <section class="py-16 bg-amber-10">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl text-amber-800 font- font-bold font-serif text-center mb-8">{Sweet Delights}</h1>
+                <h2 class="text-2xl text-amber-800 font-bold font-serif text-center mb-8">Welcome to my first restaurant
+                    web
+                    page.</h1>
+                    <h3 class="text-2xl font-bold font-serif text-center mb-12">Main sections
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Skill 1 -->
+                    <a href="bakery.html"
+                        class=" menu-item bg-white shadow-lg hover:bg-red-100 p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">🥐</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-2">Bakery</h3>
+                        <p class="text-gray-600">A selection of savoty and sweet pastries with fillings</p>
+                    </a>
+
+                    <!-- Skill 2 -->
+                    <a href="sweets.html"
+                        class=" menu-item bg-white shadow-lg hover:bg-red-100 p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-amber-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">🍮</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-2">Sweets</h3>
+                        <p class="text-gray-600">A collection of sweets in various flavors</p>
+                    </a>
+
+                    <!-- Skill 3 -->
+                    <a href="drinks.html"
+                        class=" menu-item bg-white shadow-lg hover:bg-red-100 p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">🧋</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-2">Drinks</h3>
+                        <p class="text-gray-600">Many cold sweet drinks</p>
+                    </a>
+
+
+                    <!-- Skill 4 -->
+                    <a href="icecream.html"
+                        class=" menu-item bg-white shadow-lg hover:bg-red-100 p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-pink-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">🍨</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-2">Ice cream</h3>
+                        <p class="text-gray-600">Ice cream with a uniq and new range of flavors</p>
+                    </a>
+
+                    <!-- Skill 5 -->
+                    <a href="donuts.html"
+                        class=" menu-item bg-white shadow-lg hover:bg-red-100 p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">🍩</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-2">Donuts</h3>
+                        <p class="text-gray-600">Delicious donuts, a diverse range of flaver</p>
+                    </a>
+
+                    <!-- Skill 6 -->
+                    <a href="coffee.html"
+                        class=" menu-item bg-white shadow-lg hover:bg-red-100 p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-yellow-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">☕</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-2">Coffee</h3>
+                        <p class="text-gray-600">All types of cold and hot coffee and caffeinated beverags</p>
+                    </a>
+
+
+                </div>
+            </div>
+        </section>
+
+</body>
+
+<!-- Footer -->
+<footer class="text-center mt-12 text-amber-700 py-12">
+    <p>All items baked fresh daily | Open 8am-10pm</p>
+    <p class="mt-2">123 Al-Rubaie Street | phone +9647799999999</p>
+    <P>Made by: Muhammed Akram</P>
+</footer>
+
+
+</html>
